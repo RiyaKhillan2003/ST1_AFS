@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .chat-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 350px;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        .message {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin: 10px 0;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        .user-message {
+            background-color: #d4e2d4;
+            align-self: flex-end;
+        }
+        .bot-message {
+            background-color: #c3d5eb;
+            align-self: flex-start;
+        }
+        .message-text {
+            margin: 0;
+            color: #333;
+        }
+        .buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 0 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chat-box">
+            <div class="message bot-message">
+                <p class="message-text">Welcome to ChatGPT!</p>
+            </div>
+            <div class="message bot-message">
+                <p class="message-text">How can I assist you today?</p>
+            </div>
+            <div class="buttons">
+                <a href="/login"><button>LOGIN</button></a>
+                <a href="/signup"><button>SIGN UP</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
